@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="google-adsense-account" content="ca-pub-6097338460588909">
+  <meta name="google-site-verification" content="4cLdWqFIePn_hPLiRCVkTDHAATs0C3lqsTA5FE8sSUg" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A journal-like blog by Urja Vaswani on healing, faith, and gentle growth.">
+  <title>LightWithin</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #fceef1, #ffe4eb);
+      color: #333;
+    }
+
+    .topbar {
+      background-color: #b23b6c;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 9999;
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .menu-toggle {
+      font-size: 30px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: #ffffff;
+      position: fixed;
+      top: 15px;
+      left: 20px;
+      z-index: 3000;
+    }
+
+    .site-title {
+      font-family: 'Dancing Script', cursive;
+      font-size: 1.8rem;
+      color: #fff;
+    }
+
+    nav {
+      position: fixed;
+      left: -100%;
+      top: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: #ffe4eb;
+      padding: 80px 20px 40px;
+      transition: left 0.3s ease;
+      z-index: 2000;
+    }
+
+    nav.open {
+      left: 0;
+    }
+
+    nav h1 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 2.5rem;
+      color: #d16b86;
+      margin-bottom: 10px;
+    }
+
+    nav p {
+      font-style: italic;
+      font-size: 1rem;
+      color: #8e7d88;
+      margin-bottom: 30px;
+    }
+
+    nav a {
+      display: block;
+      margin-bottom: 10px;
+      color: #5b4f51;
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: #c45c7b;
+    }
+
+    h2, h3 {
+      color: #c45c7b;
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #b23b6c;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #d16b86;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 100px auto 40px;
+      padding: 0 20px;
+    }
+
+    .blog-card {
+      background-color: #fff5f7;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+      margin-bottom: 30px;
+    }
+
+    .read-more {
+      display: inline-block;
+      margin-top: 10px;
+      color: #b23b6c;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .read-more:hover {
+      text-decoration: underline;
+    }
+
+    .blog-card h3 {
+      margin-bottom: 10px;
+    }
+
+    .blog-card p {
+      line-height: 1.6;
+    }
+
+    section {
+      margin-top: 50px;
+      padding-top: 30px;
+      border-top: 1px solid #ffd6e1;
+    }
+
+    section h2 {
+      color: #b23b6c;
+      margin-bottom: 10px;
+    }
+
+    section p {
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    section a {
+      color: #b23b6c;
+      text-decoration: underline;
+    }
+
+    section a:hover {
+      color: #d16b86;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Top Bar -->
+  <header class="topbar">
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <h1 class="site-title">LightWithin</h1>
+  </header>
+
+  <!-- Sidebar -->
+  <nav id="sidebar">
+    <button onclick="toggleMenu()" style="font-size: 20px; border: none; background: none; color: #d16b86; float: right;">✕</button>
+    <h1>LightWithin</h1>
+    <p>A space for reflection, healing, and gentle growth.</p>
+    <a href="#blog" onclick="toggleMenu()">Blog</a>
+    <a href="#about" onclick="toggleMenu()">About</a>
+    <a href="#contact" onclick="toggleMenu()">Contact</a>
+    <a href="#privacy" onclick="toggleMenu()">Privacy</a>
+    <h3 style="margin-top: 30px;">Posts</h3>
+    <a href="post3.html" onclick="toggleMenu()">Breaking The Cycle</a>
+    <a href="post2.html" onclick="toggleMenu()">Law of Attraction (Not Working)</a>
+    <a href="post1.html" onclick="toggleMenu()">Five Life Lessons Before 27</a>
+    
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container">
+    <section id="blog">
+      <h2>Latest Posts</h2>
+      
+      <div class="blog-card">
+    <h3>Breaking The Cycle</h3>
+    <p><em>By Urja Vaswani</em></p>
+    <p>How being unheard in childhood shaped my relationships and self-worth...</p>
+    <a href="post3.html" class="read-more">Read More →</a>
+      </div>
+      
+      <div class="blog-card">
+  <h3>Law Of Attraction (Not Working)</h3>
+  <p><em>By Urja Vaswani</em></p>
+  <p>A raw and honest reflection on what happens when manifesting doesn’t work, and why healing, self-love, and redefining happiness truly matter.</p>
+  <a href="post2.html" class="read-more">Read More →</a>
+</div>
+
+
+      <div class="blog-card">
+        <h3>Five Life Lessons I’ve Learned Before Turning 27</h3>
+        <p><em>By Urja Vaswani</em></p>
+        <p>Life doesn’t come with a manual, but experience teaches us lessons we never expect. Here are 5 I’ve learned before 27...</p>
+        <a href="post1.html" class="read-more">Read More →</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hi, I'm Urja — a dreamer, a thinker, and someone who's walked through her share of shadows and sunshine. This blog is my quiet corner on the internet where I share stories of healing, growth and hope.</p>
+      <p>I believe in soft mornings, handwritten words, deep connections, and the power of being kind to yourself. If you're on a journey to rediscover yourself or simply looking for a place to feel seen — welcome. You’re not alone here.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>If you'd like to connect or just say hi, you can reach me at:</p>
+      <p><a href="mailto:urja2115@gmail.com">urja2115@gmail.com</a></p>
+    </section>
+
+    <section id="privacy">
+      <h2>Privacy Policy</h2>
+      <p>This is a personal blog. I do not collect personal data or use cookies. Any third-party services like Google AdSense may collect anonymous usage data according to their own policies.</p>
+    </section>
+  </main>
+
+  <!-- Sidebar Script -->
+  <script>
+    function toggleMenu() {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.classList.toggle('open');
+    }
+  </script>
+</body>
+  </html>
